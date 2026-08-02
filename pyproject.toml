@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kb_fluct"
+version = "0.1.0"
+authors = [
+  { name="Jiyoung Yang", email="jiyoung.yang@example.com" },
+]
+description = "A Kirkwood-Buff Density Fluctuation Analysis Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Free for non-commercial use",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.3.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jiyoung-yang/kb_fluct"
+"Bug Tracker" = "https://github.com/jiyoung-yang/kb_fluct/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

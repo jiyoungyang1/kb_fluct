@@ -22,6 +22,7 @@ class FluctuationMatrix:
         self.S11_ = None
         self.S22_ = None
         self.S12_ = None
+        self.results = {}
 
     def fit(self, G11: float, G22: float, G12: float):
         """
@@ -39,4 +40,10 @@ class FluctuationMatrix:
             [self.S11_, self.S12_],
             [self.S12_, self.S22_]
         ])
+        
+        self.results['S11'] = self.S11_
+        self.results['S22'] = self.S22_
+        self.results['S12'] = self.S12_
+        self.results['S_matrix'] = self.S_matrix_
+        
         return self

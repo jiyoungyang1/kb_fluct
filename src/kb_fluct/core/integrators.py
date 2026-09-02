@@ -1,5 +1,8 @@
 import numpy as np
-from scipy.integrate import simps
+try:
+    from scipy.integrate import simpson
+except ImportError:
+    from scipy.integrate import simps as simpson
 
 def calc_kbi(r: np.ndarray, g: np.ndarray) -> float:
     """
@@ -7,4 +10,4 @@ def calc_kbi(r: np.ndarray, g: np.ndarray) -> float:
     Formula: G_ij = integral_0^infty 4*pi*r^2 * (g(r) - 1) dr
     """
     integrand = 4.0 * np.pi * (r**2) * (g - 1.0)
-    return float(simps(integrand, r))
+    return float(simpson(integrand, r))

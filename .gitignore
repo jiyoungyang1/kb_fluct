@@ -37,3 +37,7 @@ venv.bak/
 # Generated Output Images
 examples/*.png
 *.png
+
+# Exclude Blog Posts (Published separately)
+blogs/
+*.md_draft

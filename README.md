@@ -33,6 +33,15 @@ This package is divided into modular components:
 - `kb_fluct.core`: Thermodynamic Simpson integration and `GangulyCorrection` for finite-size (closed NpT ensemble) effects.
 - `kb_fluct.analysis`: Building the Fluctuation Matrix (`S-matrix`) and extracting its physical geometry.
 
+## Example Notebooks
+
+Comprehensive tutorials are available in the `examples/` directory:
+- [a_kD_KBI_derivation.ipynb](examples/a_kD_KBI_derivation.ipynb): **a.** Mathematical Derivation of $k_D$ and 3D Schur Complement
+- [b_density_fluctuation_NaCl_solution.ipynb](examples/b_density_fluctuation_NaCl_solution.ipynb): **b.** 2D Density Fluctuation Analysis in NaCl Solution
+- [c_density_fluctuation_fg_cg_compare.ipynb](examples/c_density_fluctuation_fg_cg_compare.ipynb): **c.** Fine-Grained vs. Coarse-Grained Mixture Model Comparison
+
+
+
 ## References & Citations
 
 If you use this package in your research, please ensure you cite the underlying theoretical frameworks:
